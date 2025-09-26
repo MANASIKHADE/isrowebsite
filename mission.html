@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISRO Activities</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f1f1f1;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+    }
+
+    header h1 {
+      color: orange;
+      font-size: 32px;
+    }
+
+    .activities-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .activity-card {
+      background: white;
+      color: black;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      max-width: 320px;
+      flex: 1 1 300px;
+      transition: transform 0.3s, border 0.3s;
+    }
+
+    .activity-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .activity-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .activity-card p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .activity-card:hover {
+      transform: scale(1.05);
+      border: 2px solid orange;
+    }
+
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      .activity-card {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 22px;
+      }
+
+      header p {
+        font-size: 14px;
+      }
+
+      .activity-card h3 {
+        font-size: 18px;
+      }
+
+      .activity-card p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ISRO Activities</h1>
+    <p>“India’s journey in space activities”</p>
+  </header>
+
+  <div class="activities-container">
+    <div class="activity-card">
+      <img src="Satellite Development.webp" alt="Satellite Development">
+      <h3>Satellite Development</h3>
+      <p>Designing satellites for communication, weather, Earth observation, GPS, and research.</p>
+    </div>
+
+    <div class="activity-card">
+      <img src="Space Exploration.jpg" alt="Space Exploration">
+      <h3>Space Exploration</h3>
+      <p>Missions like Chandrayaan, Mangalyaan, and Aditya-L1 to explore the Moon, Mars, and Sun.</p>
+    </div>
+
+    <div class="activity-card">
+      <img src="Launch Vehicles.webp" alt="Launch Vehicles">
+      <h3>Launch Vehicles</h3>
+      <p>Building rockets like PSLV and GSLV to put satellites into orbit.</p>
+    </div>
+
+    <div class="activity-card">
+      <img src="Earth Observation.jpg" alt="Earth Observation">
+      <h3>Earth Observation</h3>
+      <p>Providing satellite data for agriculture, water, forests, mapping, and disaster management.</p>
+    </div>
+
+    <div class="activity-card">
+      <img src="International Cooperation.jpg" alt="International Cooperation">
+      <h3>International Cooperation</h3>
+      <p>Collaborating with NASA, ESA, JAXA, and other agencies for global space research.</p>
+    </div>
+
+    <div class="activity-card">
+      <img src="Technology Development.jpg" alt="Technology Development">
+      <h3>Technology Development</h3>
+      <p>Working on reusable rockets, new engines, landers, rovers, and advanced systems.</p>
+    </div>
+  </div>
+
+</body>
+</html>

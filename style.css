@@ -1,0 +1,249 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+}
+
+.search{
+  display: flex;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+
+
+.hero {
+  background: url("2home.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h4 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 80px;
+  font-family: serif;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  color:white;
+}
+
+.news-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+
+.slides {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: slide 18s infinite;
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 380px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  transition: transform 3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .date {
+  font-size: 14px;
+  color: #0077ff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+
+.card .btn {
+  display: inline-block;
+  background: #1a73e8;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.card .btn:hover {
+  background: #0f5ec1;
+}
+
+
+@keyframes slide {
+  0%, 15%   { transform: translateX(0); }
+  16%, 30%  { transform: translateX(-380px); }
+  31%, 45%  { transform: translateX(-760px); }
+  46%, 60%  { transform: translateX(-1140px); }
+  61%, 75%  { transform: translateX(-1520px); }
+  76%, 90%  { transform: translateX(-1900px); }
+  91%, 100% { transform: translateX(0); }
+}
+
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.dots span:nth-child(1) { animation: dot 18s infinite 0s; }
+.dots span:nth-child(2) { animation: dot 18ss infinite 3s; }
+.dots span:nth-child(3) { animation: dot 18s infinite 6s; }
+.dots span:nth-child(4) { animation: dot 18s infinite 9s; }
+.dots span:nth-child(5) { animation: dot 18s infinite 12s; }
+.dots span:nth-child(6) { animation: dot 18s infinite 15s; }
+
+@keyframes dot {
+  0%, 16%   { background: #0077ff; }
+  17%, 100% { background: #ccc; }     
+}
+
+
+footer {
+      background: #0a192f; 
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    footer .links {
+      margin: 15px 0;
+    }
+    footer .links a {
+      color: #64ffda;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    footer .links a:hover {
+      color: #fff;
+    }
+    footer .social {
+      margin: 15px 0;
+    }
+    footer .social a {
+      margin: 0 10px;
+      font-size: 20px;
+      color: #64ffda;
+      text-decoration: none;
+    }
+    footer .social a:hover {
+      color: #fff;
+    }
+    footer p {
+      font-size: 14px;
+      margin-top: 15px;
+      color: #aaa;
+    }
+
+    
